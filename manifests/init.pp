@@ -12,8 +12,4 @@ class wercker_example (
 
   notice('Hello world')
 
-  class { 'wercker_example::install': } ->
-  class { 'wercker_example::config': } ~>
-  class { 'wercker_example::service': } ->
-  Class['wercker_example']
 }
